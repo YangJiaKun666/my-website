@@ -1,0 +1,69 @@
+.theme(@globalTextColor, @globalBackgroundColor, @rgba) {
+	color: @globalTextColor; // 主题文字颜色
+	background: @globalBackgroundColor; // 主题背景颜色
+	font-size: 14px; // 主题字体大小
+	// 全局背景色类名
+	.theme-background {
+		background: @globalBackgroundColor;
+	}
+	// 全局rgba背景色类名
+	.theme-background-blur {
+		background: @rgba;
+	}
+	// 全局字体颜色类名
+	.theme-text-color {
+		color: @globalTextColor;
+	}
+	// 菜单按钮
+	.header_meun {
+		color: @globalBackgroundColor;
+		border: 2px solid @globalBackgroundColor;
+	}
+	// 导航
+	.nav-bar {
+		color: @globalBackgroundColor;
+		span::after {
+			color: @globalBackgroundColor;
+		}
+	}
+	// 输入框类
+	.input_box {
+		border-bottom: 2px solid @globalTextColor;
+		.input {
+			color: @globalTextColor;
+		}
+		.input::placeholder {
+			color: @globalTextColor;
+			opacity: 0.5;
+		}
+	}
+	// 文章列表
+	.post-box {
+		border-bottom: 1px dashed @globalTextColor;
+		color: @globalTextColor;
+	}
+	// 分割线
+	.division {
+		background: @globalTextColor;
+	}
+	// 标签
+	.post-tag {
+		background: @globalTextColor;
+		color: @globalBackgroundColor;
+	}
+	// info标题
+	.list-title-text {
+		.title,
+		.time {
+			color: @globalBackgroundColor;
+		}
+	}
+	// 分页
+	.paging {
+		color: @globalTextColor;
+	}
+	// 详情
+	.detail .html {
+		color: @globalTextColor;
+	}
+}

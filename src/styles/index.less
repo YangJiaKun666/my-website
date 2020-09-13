@@ -1,0 +1,55 @@
+@import './theme.less';
+// 浅色模式
+.light-theme {
+	.theme(#464646, #fff, rgba(225, 225, 225, 0.6));
+}
+// 深色模式
+.dark-theme {
+	.theme(#fff, #333, rgba(70, 70, 70, 0.6));
+}
+* {
+	padding: 0;
+	margin: 0;
+	transition-duration: 0.2s;
+}
+.fade-enter,
+.fade-leave-to {
+	opacity: 0;
+}
+.fade-leave,
+.fade-enter-to {
+	opacity: 1;
+}
+.fade-enter-active,
+.fade-leave-active {
+	transition-duration: 0.3s;
+}
+.slice-left-enter {
+	transform: translateX(-100%);
+}
+.slice-left-enter-to,
+.slice-left-leave {
+	border-radius: 0;
+	transform: translateX(0%);
+}
+.slice-left-leave-to {
+	transform: translateX(-100%);
+}
+.slice-left-enter-active,
+.slice-left-leave-active {
+	transition-duration: 0.3s;
+}
+.toggle-page-enter,
+.toggle-page-leave-to {
+	opacity: 0;
+	transform: translateY(-30px);
+}
+.toggle-page-leave,
+.toggle-page-enter-to {
+	opacity: 1;
+	transform: translateY(0px);
+}
+.toggle-page-leave-avtive,
+.toggle-page-enter-active {
+	transition-duration: 0.3s;
+}
