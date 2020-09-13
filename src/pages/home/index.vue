@@ -48,7 +48,6 @@ export default {
 	async mounted() {
 		let postRes = await apis.getNewData()
 		this.postData = postRes.data
-		console.log(this.postData)
 	}
 }
 </script>
