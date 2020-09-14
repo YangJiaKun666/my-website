@@ -30,7 +30,6 @@ export default {
 			id: this.$route.query.postId
 		})
 		this.detailData = detailRes.data
-		console.log(this.detailData.title)
 	},
 	methods: {
 		getTime(date) {
