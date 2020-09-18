@@ -1,7 +1,7 @@
 import axios from 'axios'
 import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
-axios.defaults.baseURL = 'http://139.155.233.206:3001'
+axios.defaults.baseURL = 'http://139.155.233.206:3000'
 axios.defaults.timeout = 30000
 
 axios.interceptors.request.use(
