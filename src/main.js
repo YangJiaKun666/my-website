@@ -6,7 +6,7 @@ import store from './store'
 Vue.config.productionTip = false
 
 const userAgentInfo = navigator.userAgent.toLocaleLowerCase()
-if (userAgentInfo.indexOf('mobile')) {
+if (userAgentInfo.indexOf('mobile') !== -1) {
 	window.location.href = 'http://yjk-dev.com:8302/'
 }
 
